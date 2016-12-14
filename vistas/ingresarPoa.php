@@ -1,8 +1,9 @@
 <?php
     session_start();
 ?>
+<script src="js/main.js"></script>
+<script src="js/ingrePOA.js"></script>
 <div class="container">
-    <!--<script src="js/bootstrap.min.js"></script>-->
     <div id="contenidoProyecto">
         <h1 class="titulo">POA - Area <?php echo $_SESSION['area_designada']?> </h1>
         <div>

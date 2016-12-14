@@ -369,23 +369,30 @@ li{
   margin-bottom: -4px;
 }
 */
-footer{
-   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background: #3b5998;
-  color: white;
-  text-align: center;
-  margin-top: 570px;
-  padding-bottom: 5px;
-    padding-top: 5px;
-    
-
+html {
+  position: relative;
+  min-height: 100%;
 }
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: auto;
+    background-color: #3b5998;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
 #footer{
-    border: 2px solid white;}
+    border: 2px solid white;
+}
 
 
 /* ------------------------------------------------------------------- */
