@@ -3,10 +3,11 @@
 
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-        
+
 	include("clases/Conexion.php");
 
 	$conexion = new Conexion();
+
 
 	$proceso = $conexion->consultaRetorno("SELECT * FROM encargado WHERE emailEncargado = '$email' AND passEmail = '$password'");
         $resultado = mysqli_fetch_array($proceso);
@@ -17,11 +18,13 @@
                 $_SESSION['codArea']= $resultado[5];
                 $_SESSION['area_designada']=  asignarArea($resultado[5]);
                 //prueba();
+
 		header("Location:sistema.php");
 	}
 	else{
 		header("Location:index.php");
 	}
+
        
     function asignarArea($codigoArea){
         /*
@@ -54,3 +57,4 @@
         }
         //var_dump($filas);
     }
+
