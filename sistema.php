@@ -15,22 +15,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/usuario.ico">
 	<title>Sistema Nuevos Pasos</title>
 
-
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
-
-
 
 </head>
 <body class="system-page">
@@ -51,19 +45,19 @@
 						<li class="dropdown">
 							<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Qué quiere hacer hoy? <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-							  <li><a href="?cargar=ingresarpoav2">Ingresar POA</a></li>
-							  <li><a href="?cargar=adelantoDinero">Solicitar adelanto de dinero</a></li>
-							  <li><a href="?cargar=ordenCompra">Solicitar orden de compra</a></li>
-							  <li role="separator" class="divider"></li>
-							  <li class="dropdown-header">Rendiciones</li>
-							  <li><a href="?cargar=rendicion">Rendir adelanto de dinero</a></li>
-							 <!-- <li><a href="#">Rendir orden de compra</a></li>-->
+                      			<li><a href="?cargar=ingresarPOA" id="irAPOA" data-area= "<?php echo $_SESSION['codArea']; ?>">Ingresar POA</a></li>
+								<li><a href="#">Solicitar adelanto de dinero</a></li>
+								<li><a href="?cargar=prueba">Solicitar orden de compra</a></li>
+								<li role="separator" class="divider"></li>
+								<li class="dropdown-header">Rendiciones</li>
+								<li><a href="#">Rendir adelanto de dinero</a></li>
+								<li><a href="#">Rendir orden de compra</a></li>
 							</ul>
 						</li>
 	            	</ul>
 	            	<ul class="nav navbar-nav navbar-right">
 						<li>
-						<a href="">Área desiganada: <?php echo $_SESSION['area_designada']?> </a>
+						<a href="">Área: <?php echo $_SESSION['area_designada']?> </a>
 						</li>
 						<li>
 						<a href="" class="dropdown-toggle" data-toggle="dropdown">
@@ -98,20 +92,18 @@
 
 	<div class="container-fluid">
         <div class="row">
-			
 			<div class="col-lg-12 derecha">
+                <!--<button  > dale</button>-->
 				<?php
 				$enrutador = new Enrutador();
 					if($enrutador->validarGet(isset($_GET['cargar']))){
 					$enrutador->cargarVista($_GET['cargar']);
 					}
 				?>
-			</div><!--/.col-lg-9-->
+			</div><!--/.col-lg-12-->
         </div><!--/.row-->
-    </div><!--/div-->
-
-</body>
-<footer>
+    </div><!--/div
+    <!--<footer>
     	<div id="footer">
     	<label class="label1">ASOCIACION NUEVOS PASOS</label><br>
     	<label class="label1">Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>
@@ -120,5 +112,14 @@
     	<label class="label1">www.nuevospasosperu.org</label><br>
     	<label class="label1">e-mail:administracion@nuevospasosperu.org</label><br>
  		</div>
-    </footer>
+    </footer>-->
+
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ingrePOA.js"></script>
+    <script src="js/Activi.js"></script>
+    
+</body>
 </html>

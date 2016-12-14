@@ -3,7 +3,7 @@
 
 		public function cargarVista($vista){
 			switch ($vista) {
-				case 'ingresarPOA':
+				case 'ingresarPoa':
 				include('vistas/'.$vista.'.php');
 				break;
 
