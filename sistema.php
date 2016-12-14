@@ -48,7 +48,7 @@
 							<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">¿Qué quiere hacer hoy? <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 
-                      			<li><a href="?cargar=ingresarPOA" id="irAPOA" data-area= "<?php echo $_SESSION['codArea']; ?>">Ingresar POA</a></li>
+                                                                <li><a href="?cargar=ingresarPoa" id="irAPOA" data-area= "<?php echo $_SESSION['codArea']; ?>">Ingresar POA</a></li>
 								<li><a href="#">Solicitar adelanto de dinero</a></li>
 								<li><a href="?cargar=prueba">Solicitar orden de compra</a></li>
 								<li role="separator" class="divider"></li>
