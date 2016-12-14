@@ -2,8 +2,11 @@
 $('#irAPOA').click(function(e){
     e.preventDefault();
     var area =  $(this).data('area');
-    var url = $(this).attr('href');
-    $('.derecha').load(url);
+    $.get(
+            'vistas/ingresarPoa.php', function(contenido){
+                $('.derecha').html(contenido);
+            }
+    );
     cargarCombo(area);
 });
 
@@ -31,8 +34,11 @@ $('#selectListaProyectos').on('change',function() {
         $('#inputObjGeneral').val(respuesta[indice].objGralProyecto);
         $('#inputObjEspecifico').val(respuesta[indice].objEspcProyecto);
 
-}); 
+});
 
+$('#botonGuardarActividad').on('click',function() {
+    
+});
 
 function devolverIndiceArreglo(valor){
     var indice = 0;

@@ -1,5 +1,8 @@
+<?php
+    session_start();
+?>
 <div class="container">
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
     <div id="contenidoProyecto">
         <h1 class="titulo">POA - Area <?php echo $_SESSION['area_designada']?> </h1>
         <div>
@@ -113,7 +116,7 @@
                 <tbody>
                  
                     <tr>
-                        <TD><INPUT id="check" type="checkbox" NAME="chk"/></TD>
+                        <td><INPUT id="check" type="checkbox" NAME="chk"/></td>
                         <td><input  type="text" class="form-control tabla-estilo"/></td>
                         <td><input  type="text" class="form-control tabla-estilo" /></td>
                         <td><input  type="number"  class="form-control tabla-estilo"  min="0" id="cell41" onChange="multiplicar();" value=0 /></td>
@@ -131,6 +134,7 @@
             </div>
             <br><br>
             <button class="btn btn-primary active" id="botonAtras">Atras</button>
+            <button class="btn btn-primary active" id="botonGuardarActividad">Guardar</button>
         </div>
     </div>
 

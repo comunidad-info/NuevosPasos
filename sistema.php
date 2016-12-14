@@ -111,8 +111,9 @@
 
 			</div><!--/.col-lg-12-->
         </div><!--/.row-->
-    </div><!--/div
-    <!--<footer>
+    </div><!--/div-->
+    
+    <footer>
 
     	<div id="footer">
     	<label class="label1">ASOCIACION NUEVOS PASOS</label><br>
@@ -123,7 +124,7 @@
     	<label class="label1">e-mail:administracion@nuevospasosperu.org</label><br>
  	</div>
 
-    </footer>-->
+    </footer>
 
     <!-- Scripts -->
     <script src="js/jquery.js"></script>
