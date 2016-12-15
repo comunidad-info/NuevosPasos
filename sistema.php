@@ -111,8 +111,17 @@
 
 			</div><!--/.col-lg-12-->
         </div><!--/.row-->
-    </div><!--/div
-    <!--<footer>
+    </div><!--/div-->
+    <!-- Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ingrePOA.js"></script>
+    <script src="js/Activi.js"></script>
+    
+</body>
+
+    <footer class="footer">
 
     	<div id="footer">
     	<label class="label1">ASOCIACION NUEVOS PASOS</label><br>
@@ -123,15 +132,6 @@
     	<label class="label1">e-mail:administracion@nuevospasosperu.org</label><br>
  	</div>
 
-    </footer>-->
-
-    <!-- Scripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/ingrePOA.js"></script>
-    <script src="js/Activi.js"></script>
-    
-</body>
+    </footer>
 
 </html>

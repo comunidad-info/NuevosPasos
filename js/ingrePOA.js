@@ -63,4 +63,3 @@ $('#botonAtras').click(function(){
     $('#contenidoProyecto').show();
 });
 
-

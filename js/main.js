@@ -2,8 +2,11 @@
 $('#irAPOA').click(function(e){
     e.preventDefault();
     var area =  $(this).data('area');
-    var url = $(this).attr('href');
-    $('.derecha').load(url);
+    $.get(
+            'vistas/ingresarPoa.php', function(contenido){
+                $('.derecha').html(contenido);
+            }
+    );
     cargarCombo(area);
 });
 
@@ -31,8 +34,44 @@ $('#selectListaProyectos').on('change',function() {
         $('#inputObjGeneral').val(respuesta[indice].objGralProyecto);
         $('#inputObjEspecifico').val(respuesta[indice].objEspcProyecto);
 
-}); 
+});
 
+$('#botonGuardarActividad').on('click',function() {
+    $("#dataTable tbody tr").each(function (){
+            var campo1, campo2, campo3,campo4;
+            $(this).children("td").find(':input').each(function (index2){
+                switch (index2) 
+                {
+                    case 1: campo1 = $(this).val();
+                        break;
+                    case 2: campo2 = $(this).val();
+                        break;
+                    case 3: campo3 = $(this).val();
+                        break;
+                    case 4: campo4 = $(this).val();
+                        break;
+                }
+            });
+//            console.log(campo1 + ' - ' + campo2 + ' - ' + campo3 + ' - '+ campo4);
+            var parametros = {
+                "campo1" : campo1,
+                "campo2" : campo2,
+                "campo3" : campo3,
+                "campo4" : campo4
+            };
+            $.ajax({
+                    data:  parametros,
+                    url:   'controlador/ControladorGeneral.php',
+                    type:  'post',
+                    beforeSend: function () {
+                            $("#resultado").html("Procesando, espere por favor...");
+                    },
+                    success:  function (response) {
+                            $("#resultado").html(response);
+                    }
+            });
+        });
+});
 
 function devolverIndiceArreglo(valor){
     var indice = 0;
