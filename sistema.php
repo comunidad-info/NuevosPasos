@@ -124,12 +124,11 @@
     <footer class="footer">
 
     	<div id="footer">
-    	<label class="label1">ASOCIACION NUEVOS PASOS</label><br>
-    	<label class="label1">Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>
-    	<label class="label1">Trujillo Perú</label><br>
-    	<label class="label1">Teléfono +51-44-207393</label><br>
-    	<label class="label1">www.nuevospasosperu.org</label><br>
+    	<label class="label1">ASOCIACION NUEVOS PASOS - Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>
+<!--    	<label class="label1">Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>-->
+    	<label class="label1">Teléfono(+51)(44)207393 - www.nuevospasosperu.org</label><br>
     	<label class="label1">e-mail:administracion@nuevospasosperu.org</label><br>
+        <label class="label1">Trujillo Perú</label><br>
  	</div>
 
     </footer>
