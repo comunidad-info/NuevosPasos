@@ -49,12 +49,12 @@
 							<ul class="dropdown-menu">
 
                                                                 <li><a href="?cargar=ingresarPoa" id="irAPOA" data-area= "<?php echo $_SESSION['codArea']; ?>">Ingresar POA</a></li>
-								<li><a href="#">Solicitar adelanto de dinero</a></li>
-								<li><a href="?cargar=prueba">Solicitar orden de compra</a></li>
+								<li><a href="?cargar=adelantoDinero">Solicitar adelanto de dinero</a></li>
+								<li><a href="?cargar=ordenCompra">Solicitar orden de compra</a></li>
 								<li role="separator" class="divider"></li>
 								<li class="dropdown-header">Rendiciones</li>
-								<li><a href="#">Rendir adelanto de dinero</a></li>
-								<li><a href="#">Rendir orden de compra</a></li>
+								<li><a href="?cargar=rendicion">Rendir adelanto de dinero</a></li>
+<!--								/*<li><a href="#">Rendir orden de compra</a></li>*/-->
 
 							</ul>
 						</li>
