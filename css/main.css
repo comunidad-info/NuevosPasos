@@ -385,7 +385,7 @@ body {
     /* Set the fixed height of the footer here */
     height: auto;
     background-color: #3b5998;
-    color: white;
+    color: red;
     text-align: center;
     padding: 1rem;
 }
