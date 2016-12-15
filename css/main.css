@@ -384,7 +384,11 @@ body {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: auto;
+<<<<<<< HEAD
     background-color: skyblue;
+=======
+    background-color: #3b5998;
+>>>>>>> origin/master
     color: white;
     text-align: center;
     padding: 1rem;
