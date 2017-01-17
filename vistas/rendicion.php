@@ -66,7 +66,7 @@
 				<thead>
 					<tr>
 					<td></td>
-					<td>Nro</td>
+					
 					  <td >Fecha</td>
 					  <td colspan="2">Comprobante</td>
 					  <td>Descripcion</td>
@@ -76,7 +76,7 @@
 					<tr>
 						<td></td>
 						<td></td>
-						<td></td>
+						
 						<td>Tipo</td>
 						<td colspan="2">Nro</td>
 						<td></td>
@@ -88,7 +88,7 @@
 				 
 					<tr>
 						<TD><INPUT id="check" type="checkbox" NAME="chk"/></TD>
-						<td><input  type="text" class="form-control numero" id="numero1" value="1" readOnly/></td>
+<!--						<td><input  type="text" class="form-control numero" id="numero1" value="1" readOnly/></td>-->
 					
 						<td><input  type="date" class="form-control tabla-estilo"/></td>
 						<td><select class="form-control tabla-estilo" >

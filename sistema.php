@@ -26,7 +26,18 @@
     <link href="css/main.css" rel="stylesheet">
   
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ingrePOA.js"></script>
+    <script src="js/Activi.js"></script>
+    <script src='js/camera/jquery.mobile.customized.min.js'></script>
+    <script src='js/camera/jquery.easing.1.3.js'></script> 
+    <script src='js/camera/camera.min.js'></script>
+   
+    
 
 </head>
 <body class="system-page">
@@ -49,12 +60,12 @@
 							<ul class="dropdown-menu">
 
                                                                 <li><a href="?cargar=ingresarPoa" id="irAPOA" data-area= "<?php echo $_SESSION['codArea']; ?>">Ingresar POA</a></li>
-								<li><a href="?cargar=adelantoDinero">Solicitar adelanto de dinero</a></li>
-								<li><a href="?cargar=ordenCompra">Solicitar orden de compra</a></li>
+								<li><a href="#">Solicitar adelanto de dinero</a></li>
+								<li><a href="?cargar=prueba">Solicitar orden de compra</a></li>
 								<li role="separator" class="divider"></li>
 								<li class="dropdown-header">Rendiciones</li>
-								<li><a href="?cargar=rendicion">Rendir adelanto de dinero</a></li>
-<!--								/*<li><a href="#">Rendir orden de compra</a></li>*/-->
+								<li><a href="#">Rendir adelanto de dinero</a></li>
+								<li><a href="#">Rendir orden de compra</a></li>
 
 							</ul>
 						</li>
@@ -112,25 +123,23 @@
 			</div><!--/.col-lg-12-->
         </div><!--/.row-->
     </div><!--/div-->
-    <!-- Scripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/ingrePOA.js"></script>
-    <script src="js/Activi.js"></script>
-    
-</body>
-
     <footer class="footer">
 
     	<div id="footer">
-    	<label class="label1">ASOCIACION NUEVOS PASOS - Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>
-<!--    	<label class="label1">Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>-->
-    	<label class="label1">Teléfono(+51)(44)207393 - www.nuevospasosperu.org</label><br>
+    	<label class="label1">ASOCIACION NUEVOS PASOS</label><br>
+    	<label class="label1">Sérvulo Gutierrez 575 Urb. Sto. Dominguito</label><br>
+    	<label class="label1">Trujillo Perú</label><br>
+    	<label class="label1">Teléfono +51-44-207393</label><br>
+    	<label class="label1">www.nuevospasosperu.org</label><br>
     	<label class="label1">e-mail:administracion@nuevospasosperu.org</label><br>
-        <label class="label1">Trujillo Perú</label><br>
  	</div>
 
     </footer>
+
+    <!-- Scripts -->
+
+
+    
+</body>
 
 </html>

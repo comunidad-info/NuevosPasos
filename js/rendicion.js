@@ -24,14 +24,13 @@ function multiplicar(){
 
                var cell2 = row.insertCell(1);
                var element2 = document.createElement("input");
+               element2.type = "date";
                element2.className = "form-control numero";
                element2.id="cell1"+rowCount;
               element2.setAttribute("value",rowCount-1);
-              element2.readOnly="true";
+//              element2.readOnly="true";
 
                cell2.appendChild(element2);
-
-
 
 
                var cell3 = row.insertCell(2);
@@ -60,7 +59,7 @@ function multiplicar(){
                element4.appendChild(opt2);
                element4.appendChild(opt3);
                element4.appendChild(opt4);
-               element4.className = "form-control tabla-estilo";
+               element4.className = "form-control tabla-estilo ";
                cell4.appendChild(element4);
 
 
@@ -69,7 +68,7 @@ function multiplicar(){
                 
                var cell5 = row.insertCell(4);
                var element5 = document.createElement("input");
-               element5.className = "form-control tabla-estilo";
+               element5.className = "form-control tabla-estilo descripcion";
                element5.type = "text";
                cell5.appendChild(element5);
 
@@ -77,7 +76,7 @@ function multiplicar(){
 
                var cell6 = row.insertCell(5);
                var element6 = document.createElement("input");
-               element6.className = "form-control descripcion";
+               element6.className = "form-control ";
                element6.type = "number";
                cell6.appendChild(element6);
 

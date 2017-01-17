@@ -1,12 +1,18 @@
 <?php
-    session_start();
+   // session_start();
 ?>
 <script src="js/main.js"></script>
 <script src="js/ingrePOA.js"></script>
 <div class="container">
     <div id="contenidoProyecto">
-        <h1 class="titulo">POA - Area <?php echo $_SESSION['area_designada']?> </h1>
-        <div>
+        <div class="titulo">
+            <h1 >POA - Area <?php echo $_SESSION['area_designada']?> </h1>
+        </div>
+        <div class="money">
+            <h3>Dinero disponible <input id="dineroDisponible" type="number" readonly></h3>
+
+        </div>
+        <div class="llenarDatos">
             <form action="proceso.php" method="post" >
                 <div class="form-group">
                 <label for="usr" class="Ingresar-POA">Proyecto</label>
@@ -40,8 +46,15 @@
     </div>
     <br>
     <div id="contenidoActividad" style="display: none;">
+        <div class="detalleActividad">
+         
+        </div>
         <div>
             <div>
+                <label class="titulo" id="indiceProyecto">Proyecto -----</label>
+                <label class="titulo" id="indiceNumero">Nº -----</label><br>
+                <label class="titulo" id="indiceResultados">Resultado -----</label>
+                <label class="titulo" id="indiceNumero1">Nº -----</label>
                 <h1 class="titulo" id="indiceActividad"></h1>
                 <input class="form-control" placeholder="Nombre de la actividad" type="text" >
             </div><br>
